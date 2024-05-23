@@ -211,15 +211,27 @@
     }
 
     .resume-title{
-        font-size: 22px;
+        font-size: 19px;
         color: bisque;
         font-weight: bold;
     }
 
     .description-text {
         color: bisque;
-        font-size: 18px;
+        font-size: 14px;
         padding: 10px;
+    }
+
+    .Date-Job{
+        font-size: 15px;
+        color: bisque;
+    }
+
+    .desc-bullet-points li::before{
+        content: "\2192";
+        color: aqua;
+        font-size: 20px;
+        margin-right: 10px;
     }
     
 }
