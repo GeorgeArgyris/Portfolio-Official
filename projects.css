@@ -1,0 +1,154 @@
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.2);
+    margin: 20px;
+    width: 350px;
+    height: 250px;
+
+}
+
+.header {
+    width: 100%;
+    height: 15%;
+    border-top-left-radius: 10px;
+    /* Top left corner radius */
+    border-top-right-radius: 10px;
+    /* Top right corner radius */
+    border-bottom-left-radius: 0;
+    /* Bottom left corner radius */
+    border-bottom-right-radius: 0;
+    /* Bottom right corner radius */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: #194140;
+}
+
+.footer {
+    width: 100%;
+    height: 25%;
+    border-top-left-radius: 0;
+    /* Top left corner radius */
+    border-top-right-radius: 0;
+    /* Top right corner radius */
+    border-bottom-left-radius: 10px;
+    /* Bottom left corner radius */
+    border-bottom-right-radius: 10px;
+    /* Bottom right corner radius */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #081b1b;
+    color: bisque;
+    font-size: 19px;
+}
+
+.project-title {
+    color: bisque;
+    font-size: 20px;
+}
+
+.slide-show-button {
+    display: none;
+    position: absolute;
+    bottom: 40%;
+    left: 40%;
+    border: 5px solid #22807e;
+    font-weight: bold;
+    color: #f0f0f0;
+    background-color: transparent;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.image-container-1:hover img{
+    filter: brightness(20%);
+}
+
+/* Show the button when image is hovered over */
+.image-container-1:hover .slide-show-button {
+    display: block;
+}
+
+.slide-show-button:hover{
+    background-color: #22807e;
+}
+
+.slide-show-button:hover + img {
+    filter: brightness(40%);
+}
+
+.image-container-1 {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 85%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.image-container-1 img {
+    width: 95%;
+    height: 95%;
+    border-radius: 10px;
+}
+
+.image-container-1.net {
+    width: 100%;
+    height: 77%;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+        background-color: rgb(0, 0, 0, 0.2);
+        margin: 40px;
+        width: 300px;
+        height: 200px;
+    }
+
+    
+
+}

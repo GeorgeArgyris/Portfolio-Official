@@ -1,0 +1,167 @@
+.title-container{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    justify-content: center; 
+    align-items: center;
+    white-space: nowrap;
+}
+
+.title{
+    font-size: 25px;
+    padding: 15px;
+    color: #188C88;
+    font-weight: bold;
+}
+
+.skills-container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 100px;
+    gap: 4vw;
+    
+}
+
+.programming-skills,.programming-tools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+    background-color: rgb(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: auto;
+    white-space: nowrap;
+    max-width: 450px;
+}
+
+.title-1{
+    padding: 15px;
+    font-size: 20px;
+    color: #4ce6e0;
+    width: 100%;
+    background-color: #184746;
+    text-align: center;
+    border-top-left-radius: 10px; /* Top left corner radius */
+    border-top-right-radius: 10px; /* Top right corner radius */
+    border-bottom-left-radius: 0; /* Bottom left corner radius */
+    border-bottom-right-radius: 0; /* Bottom right corner radius */
+}
+
+.boxes {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.box{
+    position: relative;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #020c0c;
+}
+
+
+
+
+.left-line,
+.right-line {
+    position: relative;
+    top: 50%;
+    width: 50%;
+    border-top: 1px solid #024F4C; 
+    margin-bottom: 100px;
+}
+
+.left-line {
+    left: 0;
+}
+
+.right-line {
+    right: 0;
+}
+
+.tooltip-1 {
+    position: absolute;
+    transform: translate(-50%, -110%) translateX(-30px);
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-color: #024F4C;
+    color: #fff;
+    border-radius: 10px;
+    padding: 8px 8px;
+    width: auto;
+    white-space: nowrap;
+    font-size: 18px;
+    z-index: 999;
+}
+
+.box:hover .tooltip-1 {
+    opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+    .title-container{
+        width: 100%;
+    }
+    .programming-skills,.programming-tools{
+        width: 100%;
+    }
+
+    .title{
+        font-size: 20px;
+        padding: 15px;
+        color: #188C88;
+        font-weight: bold;
+    }
+
+    .skills-container{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding: 50px;
+        
+    }
+
+    .box img{
+        width: 70%;
+    }
+
+    .box{
+        position: relative;
+        padding: 12px;
+        margin: 5px;
+        border-radius: 50%;
+        background-color: transparent;
+        }
+    
+
+    .tooltip-1 {
+        position: absolute;
+        transform: translate(-50%, -140%) translateX(-30px);
+        opacity: 0;
+        transition: opacity 0.3s;
+        background-color: #024F4C;
+        color: #fff;
+        border-radius: 10px;
+        padding: 5px 5px;
+        width: auto;
+        white-space: nowrap;
+        font-size: 15px;
+        z-index: 999;
+    }
+
+}
+
+
+
