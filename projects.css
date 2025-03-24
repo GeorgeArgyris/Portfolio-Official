@@ -122,6 +122,20 @@
     border-radius: 10px;
 }
 
+.sm-button {
+    font-size: 1.3em;
+    border-radius: 10px;
+    color: #188C88;
+    border: none;
+    border-right: 2px solid #188C88;
+    border-left: 2px solid #188C88;
+    background-color: transparent;
+}
+
+.sm-button:hover{
+    border: 2px solid #188C88;
+}
+
 @media screen and (max-width: 600px) {
     .projects-container {
         display: flex;
