@@ -23,17 +23,27 @@
 
 }
 
+.sm-button {
+    font-size: 1.3em;
+    border-radius: 10px;
+    color: #188C88;
+    border: none;
+    border-right: 2px solid #188C88;
+    border-left: 2px solid #188C88;
+    background-color: transparent;
+}
+
+.sm-button:hover{
+    border: 2px solid #188C88;
+}
+
 .header {
     width: 100%;
     height: 15%;
     border-top-left-radius: 10px;
-    /* Top left corner radius */
     border-top-right-radius: 10px;
-    /* Top right corner radius */
     border-bottom-left-radius: 0;
-    /* Bottom left corner radius */
     border-bottom-right-radius: 0;
-    /* Bottom right corner radius */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,13 +56,9 @@
     width: 100%;
     height: 25%;
     border-top-left-radius: 0;
-    /* Top left corner radius */
     border-top-right-radius: 0;
-    /* Top right corner radius */
     border-bottom-left-radius: 10px;
-    /* Bottom left corner radius */
     border-bottom-right-radius: 10px;
-    /* Bottom right corner radius */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,19 +128,9 @@
     border-radius: 10px;
 }
 
-.sm-button {
-    font-size: 1.3em;
-    border-radius: 10px;
-    color: #188C88;
-    border: none;
-    border-right: 2px solid #188C88;
-    border-left: 2px solid #188C88;
-    background-color: transparent;
-}
 
-.sm-button:hover{
-    border: 2px solid #188C88;
-}
+
+
 
 @media screen and (max-width: 600px) {
     .projects-container {
