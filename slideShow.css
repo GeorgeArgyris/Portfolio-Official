@@ -6,10 +6,10 @@
   transform: translate(-50%, -50%);
   width: 70%;
   height: 85%;
-  padding: 1.5vw; /* Changed padding to viewport width (vw) */
+  padding: 1.5vw; 
   z-index: 1;
-  border-radius: 1.5vw; /* Adjusted border-radius for responsiveness */
-  box-shadow: 0 0.7vw 1.5vw rgba(0, 0, 0, 0.1); /* Adjusted box-shadow for responsiveness */
+  border-radius: 1.5vw; 
+  box-shadow: 0 0.7vw 1.5vw rgba(0, 0, 0, 0.1); 
   background-color: #062E2E;
   z-index: 10001;
 }
@@ -22,23 +22,23 @@
   transform: translate(-50%, -50%);
   width: 50%;
   height: 85%;
-  padding: 1.5vw; /* Changed padding to viewport width (vw) */
+  padding: 1.5vw;
   z-index: 1;
   background-color: #062E2E;
-  border-radius: 1.5vw; /* Adjusted border-radius for responsiveness */
-  box-shadow: 0 0.7vw 1.5vw rgba(0, 0, 0, 0.1); /* Adjusted box-shadow for responsiveness */
+  border-radius: 1.5vw;
+  box-shadow: 0 0.7vw 1.5vw rgba(0, 0, 0, 0.1); 
   z-index: 10001;
 
 }
 
 .close {
   position: absolute;
-  top: -2vw; /* Changed top to viewport width (vw) */
-  right: 0.1vw; /* Changed right to viewport width (vw) */
-  font-size: 4vw; /* Changed font-size to viewport width (vw) */
+  top: -2vw; 
+  right: 0.1vw; 
+  font-size: 4vw;
   cursor: pointer;
-  padding: 0.5vw; /* Changed padding to viewport width (vw) */
-  border-radius: 3vw; /* Changed border-radius to viewport width (vw) */
+  padding: 0.5vw; 
+  border-radius: 3vw; 
   color: aquamarine;
 }
 
@@ -48,17 +48,17 @@
 }
 
 ::-webkit-scrollbar {
-  width: 1.2vw; /* Changed width to viewport width (vw) */
-  border-radius: 4vw; /* Changed border-radius to viewport width (vw) */
+  width: 1.2vw; 
+  border-radius: 4vw; 
 }
 
 ::-webkit-scrollbar-track {
-  border-radius: 4vw; /* Changed border-radius to viewport width (vw) */
+  border-radius: 4vw; 
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #22807e;
-  border-radius: 4vw; /* Changed border-radius to viewport width (vw) */
+  border-radius: 4vw; 
 }
 
 .modal-overlay {
@@ -136,7 +136,9 @@
 
 .mySlides,
 .mySlides1,
-.mySlides2 {
+.mySlides2,
+.mySlides3,
+.mySlides4 {
   display: none;
 }
 
@@ -150,19 +152,19 @@
   position: absolute;
   top: 40%;
   width: auto;
-  padding: 1.6vw; /* Changed padding to viewport width (vw) */
-  margin-top: 2vw; /* Changed margin-top to viewport width (vw) */
+  padding: 1vw;
+  margin-top: 2vw; 
   color: white;
   font-weight: bold;
-  font-size: 2vw; /* Changed font-size to viewport width (vw) */
-  border-radius: 5vw; /* Changed border-radius to viewport width (vw) */
+  font-size: 1vw; 
+  border-radius: 50%;
   user-select: none;
   -webkit-user-select: none;
 }
 
 .next {
   right: 0;
-  margin-right: 1.1vw; /* Changed margin-right to viewport width (vw) */
+  margin-right: 1.1vw; 
 }
 
 .prev:hover,
@@ -171,26 +173,26 @@
 }
 
 .numbertext {
-  font-size: 2vw; /* Changed font-size to viewport width (vw) */
-  padding: 1.5vw; /* Changed padding to viewport width (vw) */
+  font-size: 1vw; 
+  padding: 1vw; 
   position: absolute;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #22807e;
+  color: aliceblue;
   top: 0;
-  border-radius: 5vw; /* Changed border-radius to viewport width (vw) */
+  border-radius: 50%; 
 }
 
 .imageShowing {
-  border-radius: 4vw; /* Changed border-radius to viewport width (vw) */
+  border-radius: 1vw; 
 }
 
 .caption-container {
   text-align: center;
   background-color: #222;
-  padding: 1vw 3vw; /* Changed padding to viewport width (vw) */
+  padding: 1vw 3vw; 
   color: white;
-  font-size: 2.2vw; /* Changed font-size to viewport width (vw) */
-  border-radius: 5vw; /* Changed border-radius to viewport width (vw) */
+  font-size: 1vw;
+  border-radius: 1vw; 
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -207,21 +209,27 @@
 
 .demo,
 .demo1,
-.demo2 {
+.demo2,
+.demo3,
+.demo4 {
   opacity: 0.6;
-  border-radius: 4vw; /* Changed border-radius to viewport width (vw) */
+  border-radius: 1vw; /* Changed border-radius to viewport width (vw) */
 }
 
 .active,
 .demo:hover,
 .demo1:hover,
-.demo2:hover {
+.demo2:hover,
+.demo3:hover,
+.demo4:hover {
   opacity: 1;
 }
 
 .demo:hover,
 .demo1:hover,
-.demo2:hover {
+.demo2:hover,
+.demo3:hover
+.demo4:hover {
   transform: scale(1.2);
   transition: transform 0.3s ease;
 }
@@ -237,7 +245,7 @@
     height: 50%;
     padding: 1.5vw; /* Changed padding to viewport width (vw) */
     z-index: 1;
-    border-radius: 1.5vw; /* Adjusted border-radius for responsiveness */
+    border-radius: 1vw; /* Adjusted border-radius for responsiveness */
     box-shadow: 0 0.7vw 1.5vw rgba(0, 0, 0, 0.1); /* Adjusted box-shadow for responsiveness */
     background-color: #062E2E;
     z-index: 10001;
@@ -254,7 +262,7 @@
     padding: 1.5vw; /* Changed padding to viewport width (vw) */
     z-index: 1;
     background-color: #062E2E;
-    border-radius: 1.5vw; /* Adjusted border-radius for responsiveness */
+    border-radius: 1vw; /* Adjusted border-radius for responsiveness */
     box-shadow: 0 0.7vw 1.5vw rgba(0, 0, 0, 0.1); /* Adjusted box-shadow for responsiveness */
     z-index: 10001;
   
