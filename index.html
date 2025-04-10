@@ -41,6 +41,7 @@
             background-color: #0C1618;
             font-family: 'Times New Roman', Times, serif;
         }
+
     </style>
 
     <div class="topnav" id="myTopnav">
@@ -58,7 +59,7 @@
     </div>
 
     <div class="home-container" id="home">
-        <div class="text-container">
+        <div class="text-container w3-animate-opacity">
             <div class="intro-text" id="hello-text">Hello, I am George Argyris</div>
             <div class="profession" id="job-text"></div>
 
@@ -162,7 +163,7 @@
                         </div>
                     </div>
                     <div class="text-linkedin">
-                        <a class="icon-linkedin" href="https://www.linkedin.com/in/giwrgos-argiris-b79848296/">
+                        <a class="icon-linkedin" href="https://freecodez.com/">
                             <div class="layer-linkedin">
                                 <span></span>
                                 <span></span>
@@ -178,7 +179,7 @@
             </div>
 
         </div>
-        <div class="image-container">
+        <div class="image-container w3-animate-opacity">
             <img class="profile-image" src="profile_picture.jpg">
         </div>
     </div>
@@ -189,7 +190,7 @@
         <div class="right-line"></div>
     </div>
 
-    <div class="skills-container" id="skills">
+    <div class="skills-container w3-animate-zoom" id="skills">
         <div class="programming-skills">
             <div class="title-1">Languages</div>
             <div class="boxes">
@@ -221,7 +222,7 @@
 
                 <div class="box">
                     <img src="LanguagesIcons/database-storage.png" alt="db-icon">
-                    <span class="tooltip-1">SQL / MYSQL</span>
+                    <span class="tooltip-1">SQL</span>
                 </div>
 
                 <div class="box">
@@ -304,7 +305,7 @@
     </div>
 
     <div class="projects-container" id="projects">
-        <div class="project orilina">
+        <div class="project orilina w3-animate-zoom">
             <div class="header">
                 <div class="project-title">Automation PLC Analytics</div>
             </div>
@@ -314,7 +315,7 @@
             </div>
 
         </div>
-        <div class="project">
+        <div class="project w3-animate-zoom">
             <div class="header">
                 <div class="project-title">Datagrid-Chart Analysis</div>
             </div>
@@ -324,9 +325,9 @@
             </div>
 
         </div>
-        <div class="project">
+        <div class="project w3-animate-zoom">
             <div class="header">
-                <div class="project-title">.Net Framework Application</div>
+                <div class="project-title">.Net Application</div>
             </div>
             <div class="image-container-1 net">
                 <img src="Project_Palaplast_Net/NETApplicationWhole.png" alt="ori-1">
@@ -335,7 +336,7 @@
 
         </div>
 
-        <div class="project" style="display: none;" id="project-cmms">
+        <div class="project w3-animate-zoom" style="display: none;" id="project-cmms">
             <div class="header">
                 <div class="project-title">CMMS</div>
             </div>
@@ -346,13 +347,24 @@
 
         </div>
 
-        <div class="project" style="display: none;" id="project-autonomous">
+        <div class="project w3-animate-zoom" style="display: none;" id="project-autonomous">
             <div class="header">
-                <div class="project-title">Classifiaction Project</div>
+                <div class="project-title">Classification Project</div>
             </div>
             <div class="image-container-1 net">
                 <img src="WebPresentation/Screenshot 2024-04-19 140148.png" alt="autonomous-1">
                 <button class="slide-show-button" onclick="openModal4()" id="show-slide-text4">Slide Show</button>
+            </div>
+
+        </div>
+
+        <div class="project w3-animate-zoom" style="display: none;" id="project-graphics">
+            <div class="header">
+                <div class="project-title">3D Game - Pi Run</div>
+            </div>
+            <div class="image-container-1 net">
+                <img src="PIRAN_Screens/1.png" alt="graphics-1">
+                <button class="slide-show-button" onclick="openModal5()" id="show-slide-text5">Slide Show</button>
             </div>
 
         </div>
@@ -381,15 +393,11 @@
             <div class="resume-box">
                 <div class="header-resume" id="header-1">
                     <div class="resume-title">Technical University Of Crete</div>
-                    <div class="Date-Job">Pursuing Integraded Master in Electrical and Computer Engeneering.</div>
-                    <div class="arrow-icon" onclick="showDescription(1)" style="display: none;">
-                        <img src="down-arrow.png" alt="Icon1" class="icon1" title="Show description">
-                        <img src="arrow-up.png" alt="Icon2" class="icon2" style="display: none;"
-                            title="Hide Description">
-                    </div>
+                    <div class="Date-Job">Integraded Master in Electrical and Computer Engeneering.</div>
+
 
                 </div>
-                <div class="description" style="display: none;">
+                <div class="description w3-animate-bottom" style="display: none;" >
                     <div class="description-text">
                         <ul class="desc-bullet-points">
                             <li>Completed rigorous coursework in computer science fundamentals including algorithms,
@@ -410,19 +418,17 @@
                 <div class="header-resume" id="header-2">
                     <div class="resume-title">Sabo S.A Industrial Solutions</div>
                     <div class="Date-Job">OT Applications Developer</div>
-                    <div class="arrow-icon-2" onclick="showDescription(2)" style="display: none;">
-                        <img src="down-arrow.png" alt="Icon1" class="icon1-1" title="Show description">
-                        <img src="arrow-up.png" alt="Icon2" class="icon2-1" style="display: none;"
-                            title="Hide Description">
-                    </div>
+
                 </div>
-                <div class="description-1" style="display: none;">
+                <div class="description-1 w3-animate-bottom" style="display: none;">
                     <div class="description-text">
                         <ul class="desc-bullet-points">
-                            <li>Handling large-scale projects from design to implementation, including the development and deployment of innovative IoT applications. </li>
-                            <li>Understanding and analyzing code, creating highly functional, modular, and scalable solutions,
-                                collaborating effectively with cross-functional teams,
-                                and participating in meetings with customers to gather requirements and ensure their needs are met. </li>
+                            <li>As an OT Application Developer, I specialize in creating large scale Web Applications
+                            </li>
+                            <li>Additionally, I develop .NET applications using Visual Studio and C#.</li>
+                            <li>My role involves designing and implementing innovative solutions to connect and manage
+                                IoT devices,
+                                leveraging my expertise in both front-end and back-end technologies.</li>
                         </ul>
                     </div>
                 </div>
@@ -515,7 +521,7 @@
 
     <!-- Modal Code -->
     <div class="modal-overlay" id="overlay"></div>
-    
+
     <div id="ModalOrilina" class="w3-animate-opacity modal">
         <span class="close" onclick="closeModal()">&times;</span>
 
@@ -626,15 +632,15 @@
                 </div>
                 <div class="column">
                     <img class="demo cursor" src="Project_Orilina_Screenshots/Page07_01.png" style="width:100%"
-                        onclick="currentSlide(10)" alt="-">
+                        onclick="currentSlide(9)" alt="-">
                 </div>
                 <div class="column">
                     <img class="demo cursor" src="Project_Orilina_Screenshots/Page07_02.png" style="width:100%"
-                        onclick="currentSlide(11)" alt="-">
+                        onclick="currentSlide(10)" alt="-">
                 </div>
                 <div class="column">
                     <img class="demo cursor" src="Project_Orilina_Screenshots/Page07_03.png" style="width:100%"
-                        onclick="currentSlide(12)" alt="-">
+                        onclick="currentSlide(11)" alt="-">
                 </div>
             </div>
         </div>
@@ -826,30 +832,30 @@
             <!-- Thumbnail images -->
             <div class="row">
                 <div class="column">
-                    <img class="demo3 cursor" src="CMMS/cmms_1.png" style="width:100%"
-                        onclick="currentSlide3(1)" alt="-">
+                    <img class="demo3 cursor" src="CMMS/cmms_1.png" style="width:100%" onclick="currentSlide3(1)"
+                        alt="-">
                 </div>
                 <div class="column">
-                    <img class="demo3 cursor" src="CMMS/cmms_2.png" style="width:100%"
-                        onclick="currentSlide3(2)" alt="-">
+                    <img class="demo3 cursor" src="CMMS/cmms_2.png" style="width:100%" onclick="currentSlide3(2)"
+                        alt="-">
                 </div>
                 <div class="column">
-                    <img class="demo3 cursor" src="CMMS/cmms_3.png" style="width:100%"
-                        onclick="currentSlide3(3)" alt="-">
+                    <img class="demo3 cursor" src="CMMS/cmms_3.png" style="width:100%" onclick="currentSlide3(3)"
+                        alt="-">
                 </div>
                 <div class="column">
-                    <img class="demo3 cursor" src="CMMS/cmms_4.png" style="width:100%"
-                        onclick="currentSlide3(4)" alt="-">
-                </div>
-
-                <div class="column">
-                    <img class="demo3 cursor" src="CMMS/cmms_5.png" style="width:100%"
-                        onclick="currentSlide3(5)" alt="-">
+                    <img class="demo3 cursor" src="CMMS/cmms_4.png" style="width:100%" onclick="currentSlide3(4)"
+                        alt="-">
                 </div>
 
                 <div class="column">
-                    <img class="demo3 cursor" src="CMMS/cmms_6.png" style="width:100%"
-                        onclick="currentSlide3(6)" alt="-">
+                    <img class="demo3 cursor" src="CMMS/cmms_5.png" style="width:100%" onclick="currentSlide3(5)"
+                        alt="-">
+                </div>
+
+                <div class="column">
+                    <img class="demo3 cursor" src="CMMS/cmms_6.png" style="width:100%" onclick="currentSlide3(6)"
+                        alt="-">
                 </div>
 
             </div>
@@ -908,6 +914,118 @@
 
     </div>
 
+    <div id="ModalGraphics" class="w3-animate-opacity modal">
+        <span class="close" onclick="closeModal5()">&times;</span>
+
+        <div class="album-container cmms">
+
+            <!-- Full-width images with number text -->
+            <div class="mySlides5">
+                <div class="numbertext">1 / 10</div>
+                <img class="imageShowing" src="PIRAN_Screens/1.png" style="width: 100%;">
+            </div>
+
+            <div class="mySlides5">
+                <div class="numbertext">1 / 10</div>
+                <img class="imageShowing" src="PIRAN_Screens/2.png" style="width: 100%;">
+            </div>
+
+            <div class="mySlides5">
+                <div class="numbertext">3 / 10</div>
+                <img class="imageShowing" src="PIRAN_Screens/3.png" style="width: 100%;">
+            </div>
+
+            <div class="mySlides5">
+                <div class="numbertext">4 / 10</div>
+                <img class="imageShowing" src="PIRAN_Screens/4.png" style="width: 100%;">
+            </div>
+
+            <div class="mySlides5">
+                <div class="numbertext">5 / 10</div>
+                <img class="imageShowing" src="PIRAN_Screens/5.png" style="width: 100%;">
+            </div>
+
+            <div class="mySlides5">
+                <div class="numbertext">6 / 10</div>
+                <img class="imageShowing" src="PIRAN_Screens/6.png" style="width: 100%;">
+            </div>
+
+            <div class="mySlides5">
+                <div class="numbertext">7 / 10</div>
+                <img class="imageShowing" src="PIRAN_Screens/7.png" style="width: 100%;">
+            </div>
+
+            <div class="mySlides5">
+                <div class="numbertext">8 / 10</div>
+                <img class="imageShowing" src="PIRAN_Screens/8.png" style="width: 100%;">
+            </div>
+
+            <div class="mySlides5">
+                <div class="numbertext">9 / 10</div>
+                <img class="imageShowing" src="PIRAN_Screens/9.png" style="width: 100%;">
+            </div>
+
+            <div class="mySlides5">
+                <div class="numbertext">10 / 10</div>
+                <img class="imageShowing" src="PIRAN_Screens/10.png" style="width: 100%;">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides5(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides5(1)">&#10095;</a>
+
+            <!-- Image text -->
+            <div class="caption-container">
+                <p id="caption5"></p>
+            </div>
+
+            <!-- Thumbnail images -->
+            <div class="row">
+                <div class="column">
+                    <img class="demo5 cursor" src="PIRAN_Screens/1.png" style="width:100%;" onclick="currentSlide5(1)"
+                        alt="-">
+                </div>
+                <div class="column">
+                    <img class="demo5 cursor" src="PIRAN_Screens/2.png" style="width:100%" onclick="currentSlide5(2)"
+                        alt="-">
+                </div>
+                <div class="column">
+                    <img class="demo5 cursor" src="PIRAN_Screens/3.png" style="width:100%" onclick="currentSlide5(3)"
+                        alt="-">
+                </div>
+                <div class="column">
+                    <img class="demo5 cursor" src="PIRAN_Screens/4.png" style="width:100%" onclick="currentSlide5(4)"
+                        alt="-">
+                </div>
+                <div class="column">
+                    <img class="demo5 cursor" src="PIRAN_Screens/5.png" style="width:100%" onclick="currentSlide5(5)"
+                        alt="-">
+                </div>
+                <div class="column">
+                    <img class="demo5 cursor" src="PIRAN_Screens/6.png" style="width:100%" onclick="currentSlide5(6)"
+                        alt="-">
+                </div>
+                <div class="column">
+                    <img class="demo5 cursor" src="PIRAN_Screens/7.png" style="width:100%" onclick="currentSlide5(7)"
+                        alt="-">
+                </div>
+                <div class="column">
+                    <img class="demo5 cursor" src="PIRAN_Screens/8.png" style="width:100%" onclick="currentSlide5(8)"
+                        alt="-">
+                </div>
+                <div class="column">
+                    <img class="demo5 cursor" src="PIRAN_Screens/9.png" style="width:100%" onclick="currentSlide5(9)"
+                        alt="-">
+                </div>
+                <div class="column">
+                    <img class="demo5 cursor" src="PIRAN_Screens/10.png" style="width:100%" onclick="currentSlide5(10)"
+                        alt="-">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 
 </body>
 
@@ -918,21 +1036,27 @@
     function ShowMore() {
         counterSm++;
         let button = document.getElementById("sm_button");
-        let projectCmms = document.getElementById('project-cmms') ;
-        let projectAutonomous = document.getElementById('project-autonomous') ;
+        let projectCmms = document.getElementById('project-cmms');
+        let projectAutonomous = document.getElementById('project-autonomous');
+        let projectGraphics = document.getElementById('project-graphics');
+
 
 
 
         if (counterSm % 2 == 0) {
             button.innerHTML = "Show More!";
-            projectCmms.style.display = "none" ;
-            projectAutonomous.style.display = "none" ;
+            projectCmms.style.display = "none";
+            projectAutonomous.style.display = "none";
+            projectGraphics.style.display = "none";
+
 
 
         } else {
             button.innerHTML = "Show Less!";
-            projectCmms.style.display = "block" ;
-            projectAutonomous.style.display = "block" ;
+            projectCmms.style.display = "block";
+            projectAutonomous.style.display = "block";
+            projectGraphics.style.display = "block";
+
 
         }
 
@@ -989,6 +1113,18 @@
         document.getElementById('overlay').style.display = 'none';
         document.getElementById('ModalAutonomous').style.display = 'none';
     }
+
+    function openModal5() {
+        document.getElementById('overlay').style.display = 'block';
+        document.getElementById('ModalGraphics').style.display = 'block';
+    }
+
+    function closeModal5() {
+        document.getElementById('overlay').style.display = 'none';
+        document.getElementById('ModalGraphics').style.display = 'none';
+    }
+
+
     let slideIndex = 1;
     showSlides(slideIndex);
 
@@ -1163,6 +1299,41 @@
         dots[slideIndex4 - 1].className += " active";
         captionText.innerHTML = dots[slideIndex4 - 1].alt;
     }
+
+    let slideIndex5 = 1;
+    showSlides5(slideIndex5);
+
+    // Next/previous controls
+    function plusSlides5(n) {
+        showSlides5(slideIndex5 += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide5(n) {
+        showSlides5(slideIndex5 = n);
+    }
+
+    function showSlides5(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides5");
+        let dots = document.getElementsByClassName("demo5");
+        let captionText = document.getElementById("caption5");
+        if (n > slides.length) {
+            slideIndex5 = 1
+        }
+        if (n < 1) {
+            slideIndex5 = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex5 - 1].style.display = "block";
+        dots[slideIndex5 - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex5 - 1].alt;
+    }
 </script>
 
 <script>
@@ -1178,45 +1349,36 @@
 
     function showDescription(id) {
         if (id == 1) {
-            const arrowIcon = document.querySelector('.arrow-icon');
-            const icon1 = document.querySelector('.icon1');
-            const icon2 = document.querySelector('.icon2');
+
             const description = document.querySelector('.description');
             const header1 = document.getElementById('header-1');
 
             description.classList.toggle('show');
             if (description.classList.contains('show')) {
-                icon1.style.display = "none";
-                icon2.style.display = "inline-block";
+
                 description.style.display = "block";
                 header1.style.borderBottomLeftRadius = "0";
                 header1.style.borderBottomRightRadius = "0";
 
             } else {
-                icon1.style.display = "inline-block";
-                icon2.style.display = "none";
                 description.style.display = "none";
                 header1.style.borderBottomLeftRadius = "10px";
                 header1.style.borderBottomRightRadius = "10px";
             }
         } else if (id == 2) {
-            const arrowIcon = document.querySelector('.arrow-icon-2');
-            const icon1 = document.querySelector('.icon1-1');
-            const icon2 = document.querySelector('.icon2-1');
+
             const description = document.querySelector('.description-1');
             const header1 = document.getElementById('header-2');
 
             description.classList.toggle('show');
             if (description.classList.contains('show')) {
-                icon1.style.display = "none";
-                icon2.style.display = "inline-block";
+
                 description.style.display = "block";
                 header1.style.borderBottomLeftRadius = "0";
                 header1.style.borderBottomRightRadius = "0";
 
             } else {
-                icon1.style.display = "inline-block";
-                icon2.style.display = "none";
+
                 description.style.display = "none";
                 header1.style.borderBottomLeftRadius = "10px";
                 header1.style.borderBottomRightRadius = "10px";
